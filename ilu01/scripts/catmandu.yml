@@ -1,0 +1,12 @@
+importer:
+  ilu01_seq:
+     package: MARC
+     options:
+        type: ALEPHSEQ
+        fix: seq2m21.fix
+exporter:
+  luzbibl_xml:
+     package: MARC
+     options:
+        type: XML
+        fix: luzbibl.fix

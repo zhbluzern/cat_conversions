@@ -1,5 +1,7 @@
-select marc_match('909', '[LI][US][\d]{4}')
+# select-Kriterien für Aufnahmen der Luzerner und Zentralschweizer Bibliografie
+select marc_match('909[L2]a', 'LU|IS')
 
+# Löschen und Korrigieren einiger Felder und Unterfelder
 do marc_each()
   marc_remove(773$1$2$j$w)
   marc_remove(490$i$w)
