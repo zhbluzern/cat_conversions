@@ -7,7 +7,7 @@ importer:
         handler: oai_dc
         metadataPrefix: oai_ethzprimo
         from: 2001-04-30T07:20:48Z
-        to: 2017-07-01T07:20:48Z
+        to: 2017-09-01T07:20:48Z
 exporter:
   matarch_yaml:
      package: YAML
