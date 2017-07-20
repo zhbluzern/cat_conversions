@@ -1,0 +1,20 @@
+importer:
+  matarch_in:
+     package: OAI
+     options:
+        url: http://www.materialarchiv.ch/materialarchiv/ws/helper/oai.php
+        set:
+        handler: oai_dc
+        metadataPrefix: oai_ethzprimo
+        from: 2001-04-30T07:20:48Z
+        to: 2017-07-01T07:20:48Z
+exporter:
+  matarch_yaml:
+     package: YAML
+     options:
+        fix: 
+  matarch_m21:
+     package: MARC
+     options:
+        type: ISO          # use 'XML', 'ALEPHSEQ', 'ISO' according to preferences
+        fix: matarch.fix
