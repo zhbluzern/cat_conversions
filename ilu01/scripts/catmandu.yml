@@ -10,3 +10,8 @@ exporter:
      options:
         type: XML
         fix: luzbibl.fix
+  luzdrucke_xml:
+     package: MARC
+     options:
+        type: XML
+        fix: luzdrucke.fix
