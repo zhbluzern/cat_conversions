@@ -23,7 +23,7 @@ do identity()
   paste(cf008_full,cf008_1,cf008_2,cf008_3,join_char:'')
   marc_add('008', ' ', $.cf008_full)
 end
-# Weitere MARC-Felder
+# Weitere MARC-Felder.
 marc_add('110', ind1, '2', ind2, ' ', a, $.creator, e, 'Sammler', 4, 'col')
 marc_add('245', ind1, '1', ind2, '0', a, $.title, b, $.subtitle, c, $.creator)
 marc_add('246', ind1, '1', ind2, '3', a, $.synonym)
