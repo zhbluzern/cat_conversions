@@ -43,8 +43,8 @@ marc_add('856', ind1, '4', ind2, '9', u, $.identifier, z, 'Weitere Informationen
 marc_add('856', ind1, '4', ind2, '0', u, $.thumbnail, z, 'Cover')
 # Erstelle Exemplar (nur HSLU-Standorte)
 if any_equal(sample_location.*, 'HSLU T+A Campus Horw')
-  marc_add('852', ind1, ' ', ind2, ' ', b, 'LUHTA', c, 'TABIB', h, '-')
+  marc_add('AVA', ind1, ' ', ind2, ' ', b, 'LUHTA', j, 'TABIB', d, '-')
 end
 if any_equal(sample_location.*, 'HSLU D+K Luzern Sentimatt')
-  marc_add('852', ind1, ' ', ind2, ' ', b, 'LUHGK', c, 'HGFRE', h, '-')
+  marc_add('AVA', ind1, ' ', ind2, ' ', b, 'LUHGK', j, 'HGFRE', d, '-')
 end
