@@ -15,3 +15,10 @@ exporter:
      options:
         type: XML
         fix: luzdrucke.fix
+  isbn_liste:
+     package: CSV
+     options:
+        fix: isbn_liste.fix
+        always_quote: 1
+        escape_char: \
+        fields: isbn,main_author,add_authors,title

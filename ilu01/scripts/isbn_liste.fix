@@ -1,0 +1,12 @@
+# Wähle nur Aufnahmen mit ISBN in 020a
+select marc_match('020a', '.*')
+
+# Mappe die benötigten Inhalte auf Felder
+marc_map(020a,isbn, join:'; ')
+marc_map(245ab,title, join:': ')
+replace_all(title, '<|>', '')
+marc_map(100a,main_author)
+marc_map(700a,add_authors, join:'; ')
+
+# Erhalte Felder für vier Spalten
+retain(isbn,main_author,add_authors,title)
